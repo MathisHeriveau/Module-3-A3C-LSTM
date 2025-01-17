@@ -14,6 +14,8 @@ Dans ce module, nous implémentons une combinaison de techniques avancées en ap
 
 ### 1. Actor-Critic
 
+<img src="Actor.png" alt="Texte alternatif" width="250"/>
+
 L'architecture **Actor-Critic** repose sur deux parties principales :
 
 - **L'acteur (Actor)** : Cette partie prend une décision en choisissant l'action à effectuer dans un état donné. Elle utilise une fonction de politique pour générer un ensemble d'actions.
@@ -24,6 +26,8 @@ Les valeurs **Q** de l’acteur sont appelées stratégie et sont parfois notée
 ### 2. Asynchronous
 
 Le concept **Asynchronous** (Asynchrone) permet à plusieurs agents d'interagir avec l'environnement en même temps. Chaque agent commence à un point différent de l'environnement et apporte ses connaissances aux autres agents via le réseau partagé. Cette approche améliore l'exploration et réduit le risque d'overfitting ou de stagnation dans certaines parties de l'environnement.
+
+<img src="A3C-reinforcement-learning.jpg" alt="Texte alternatif" width="250"/>
 
 Les agents partagent un réseau neuronal, qui génère des politiques (acteurs) et des critiques. En cas de mise à jour des poids du réseau, tous les agents partagent les mêmes poids, mais leurs actions sont distinctes et basées sur les contextes spécifiques de chaque agent.
 
@@ -38,6 +42,9 @@ L’objectif est de maximiser l’avantage pour apprendre plus efficacement les 
 La **perte de police** est utilisée pour inciter l'agent à choisir des actions positives, tandis que la **perte de valeur** est liée à l’évaluation de l’état (valeur de l’état).
 
 ### 4. LSTM : Long Short Term Memory
+
+<img src="LSTM.png" alt="Texte alternatif" width="250"/>
+
 
 Le **LSTM** est une couche spécialisée dans les réseaux de neurones récurrents (RNN). Contrairement aux réseaux classiques, les LSTM possèdent une mémoire qui leur permet de se souvenir des actions passées et d'en tenir compte pour les décisions futures. Cela est particulièrement utile pour les environnements où la dynamique des états évolue au fil du temps, comme les jeux vidéo.
 
