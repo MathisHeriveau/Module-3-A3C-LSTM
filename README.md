@@ -35,8 +35,6 @@ Les agents partagent un réseau neuronal, qui génère des politiques (acteurs) 
 
 L’**avantage** (Advantage) représente la différence entre la **valeur de l’état** (estimée par le critique) et la **valeur d’action** choisie. Cet avantage est utilisé pour ajuster les décisions de l’acteur et améliorer ses actions futures. 
 
-L’avantage est calculé avec l’équation suivante :
-\[ \text{Advantage}(s, a) = Q(s, a) - V(s) \]
 L’objectif est de maximiser l’avantage pour apprendre plus efficacement les bonnes actions.
 
 La **perte de police** est utilisée pour inciter l'agent à choisir des actions positives, tandis que la **perte de valeur** est liée à l’évaluation de l’état (valeur de l’état).
